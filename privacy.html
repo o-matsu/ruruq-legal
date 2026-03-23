@@ -77,10 +77,12 @@
     <li><strong>日記情報:</strong> テキスト、写真、天気情報</li>
     <li><strong>AI相談内容:</strong> チャットでの質問・回答履歴</li>
     <li><strong>リマインダー設定:</strong> 水やり頻度、通知時間帯</li>
+    <li><strong>地域情報:</strong> お住まいの都道府県（地域設定時に手動選択またはGPS位置情報から自動取得）</li>
   </ul>
 
   <h3 style="font-size: 1rem; margin-top: 16px; margin-bottom: 8px;">1.2 自動的に収集する情報</h3>
   <ul>
+    <li><strong>位置情報:</strong> 地域設定機能でGPS自動取得を選択した場合のみ、端末の位置情報を一時的に取得します。取得した位置情報は都道府県名への変換にのみ使用し、緯度・経度などの詳細な位置情報はサーバーに保存しません</li>
     <li><strong>デバイス情報:</strong> OS種類・バージョン、デバイスモデル</li>
     <li><strong>利用状況:</strong> アプリの利用頻度、機能の使用状況</li>
     <li><strong>課金情報:</strong> サブスクリプションの状態（決済情報自体はApple/Googleが管理）</li>
@@ -92,6 +94,7 @@
     <li>本アプリのサービス提供および機能の実現</li>
     <li>ユーザーアカウントの管理および認証</li>
     <li>AI相談機能における回答の最適化（登録作物・地域・季節のコンテキスト考慮）</li>
+    <li>地域に応じた栽培アドバイスの提供（都道府県の気候特性を考慮）</li>
     <li>プッシュ通知の送信（リマインダー）</li>
     <li>サブスクリプションの管理</li>
     <li>サービスの改善および新機能の開発</li>
@@ -131,6 +134,12 @@
       <td>RevenueCat Inc.</td>
       <td>サブスクリプション管理</td>
       <td>匿名ID、購入情報</td>
+    </tr>
+    <tr>
+      <td>Geocoding API（OS標準）</td>
+      <td>Apple Inc. / Google LLC</td>
+      <td>位置情報から都道府県名への変換</td>
+      <td>端末の位置情報（一時的な利用のみ）</td>
     </tr>
     <tr>
       <td>Apple Sign In</td>
