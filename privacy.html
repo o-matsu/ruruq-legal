@@ -3,250 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー - るるん</title>
-  <style>
-    :root {
-      --sand: #C4956A;
-      --text: #1A1A1A;
-      --bg: #F7F7F5;
-      --border: #E0E0E0;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.8;
-      padding: 24px 16px;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    h1 {
-      font-size: 1.5rem;
-      border-bottom: 2px solid var(--sand);
-      padding-bottom: 8px;
-      margin-bottom: 24px;
-    }
-    h2 {
-      font-size: 1.1rem;
-      margin-top: 32px;
-      margin-bottom: 8px;
-      color: var(--text);
-    }
-    p, li { font-size: 0.95rem; margin-bottom: 8px; }
-    ul, ol { padding-left: 1.5em; margin-bottom: 16px; }
-    .meta {
-      font-size: 0.85rem;
-      color: #666;
-      margin-bottom: 24px;
-    }
-    .app-name {
-      color: var(--sand);
-      font-weight: 600;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0;
-      font-size: 0.9rem;
-    }
-    th, td {
-      border: 1px solid var(--border);
-      padding: 10px 12px;
-      text-align: left;
-    }
-    th {
-      background: #f0f0ee;
-      font-weight: 600;
-    }
-  </style>
+  <title>プライバシーポリシー — るるん</title>
+  <meta name="description" content="るるん のプライバシーポリシー。収集するデータ、利用目的、外部サービス、ユーザーの権利について。">
+  <meta name="theme-color" content="#FAF8F5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>プライバシーポリシー</h1>
-  <p class="meta">最終更新日: 2026年4月17日</p>
+  <main class="page">
+    <header class="masthead">
+      <span class="masthead__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22V11"/>
+          <path d="M12 11c0-4 3-7 7-7 0 4-3 7-7 7Z"/>
+          <path d="M12 14c0-3-2.5-5.5-5.5-5.5C6.5 11.5 9 14 12 14Z"/>
+        </svg>
+      </span>
+      <span class="masthead__wordmark">るるん</span>
+      <span class="masthead__spacer"></span>
+      <span class="masthead__category">LEGAL · PRIVACY</span>
+    </header>
 
-  <p>本プライバシーポリシーは、<span class="app-name">るるん</span>（以下「本アプリ」）におけるユーザーの個人情報の取り扱いについて定めるものです。</p>
+    <h1 class="doc-title">プライバシーポリシー</h1>
+    <p class="doc-meta">最終更新日 — 2026年4月17日</p>
 
-  <h2>1. 収集する情報</h2>
-  <p>本アプリでは、以下の情報を収集します。</p>
+    <p class="doc-lede">本プライバシーポリシーは、<span class="app-name">るるん</span>（以下「本アプリ」）におけるユーザーの個人情報の取り扱いについて定めるものです。</p>
 
-  <h3 style="font-size: 1rem; margin-top: 16px; margin-bottom: 8px;">1.1 ユーザーが提供する情報</h3>
-  <ul>
-    <li><strong>アカウント情報:</strong> メールアドレス（アカウント登録時）、氏名（Apple Sign In / Google Sign In をご利用の場合、各サービスでユーザーが許諾した範囲で取得）</li>
-    <li><strong>作物情報:</strong> 登録した作物の種類、品種、栽培状態、栽培開始日、メモ</li>
-    <li><strong>日記情報:</strong> 記録日、テキスト、写真、天気情報、紐付けた作物との関連情報</li>
-    <li><strong>AI相談内容:</strong> チャットでの質問・回答履歴</li>
-    <li><strong>予定（タスク）情報:</strong> 予定のタイトル、予定日、通知時刻、繰り返し設定、対象作物、作業内容（水やり・追肥等）、メモ</li>
-    <li><strong>地域情報:</strong> お住まいの都道府県（地域設定時に手動選択またはGPS位置情報から自動取得）</li>
-    <li><strong>プロフィール情報（今後提供予定）:</strong> 表示名、アバター設定</li>
-  </ul>
+    <h2>1. 収集する情報</h2>
+    <p>本アプリでは、以下の情報を収集します。</p>
 
-  <h3 style="font-size: 1rem; margin-top: 16px; margin-bottom: 8px;">1.2 自動的に収集する情報</h3>
-  <ul>
-    <li><strong>位置情報:</strong> 地域設定機能でGPS自動取得を選択した場合のみ、端末の位置情報を一時的に取得します。取得した位置情報は都道府県名への変換にのみ使用し、緯度・経度などの詳細な位置情報はサーバーに保存しません</li>
-    <li><strong>デバイス情報:</strong> OS種類・バージョン、デバイスモデル</li>
-    <li><strong>利用状況（Firebase Analytics）:</strong> 画面遷移、操作イベント（作物登録、日記投稿、AI相談開始等）、アプリ利用頻度、Firebase App Instance ID、ユーザーID</li>
-    <li><strong>クラッシュ・エラー情報（Sentry）:</strong> アプリの異常終了・エラーの発生箇所と詳細、画面遷移履歴、デバイス情報、ユーザーID</li>
-    <li><strong>パフォーマンスデータ（Sentry）:</strong> 画面遷移の所要時間、APIリクエストの所要時間等のパフォーマンス計測値</li>
-    <li><strong>課金情報:</strong> サブスクリプションの状態（決済情報自体はApple/Googleが管理）</li>
-  </ul>
-  <p style="font-size: 0.9rem; color: #555;">※ Firebase Analytics・Sentry で送信されるデータには、メールアドレスや氏名、AI相談のメッセージ本文等の個人情報が含まれないよう、アプリ側でフィルタリングを行っています。これらのデータ送信は、設定画面からいつでも停止できます（詳細は第7項）。</p>
+    <h3>1.1 ユーザーが提供する情報</h3>
+    <ul>
+      <li><strong>アカウント情報:</strong> メールアドレス（アカウント登録時）、氏名（Apple Sign In / Google Sign In をご利用の場合、各サービスでユーザーが許諾した範囲で取得）</li>
+      <li><strong>作物情報:</strong> 登録した作物の種類、品種、栽培状態、栽培開始日、メモ</li>
+      <li><strong>日記情報:</strong> 記録日、テキスト、写真、天気情報、紐付けた作物との関連情報</li>
+      <li><strong>AI相談内容:</strong> チャットでの質問・回答履歴</li>
+      <li><strong>予定（タスク）情報:</strong> 予定のタイトル、予定日、通知時刻、繰り返し設定、対象作物、作業内容（水やり・追肥等）、メモ</li>
+      <li><strong>地域情報:</strong> お住まいの都道府県（地域設定時に手動選択またはGPS位置情報から自動取得）</li>
+      <li><strong>プロフィール情報（今後提供予定）:</strong> 表示名、アバター設定</li>
+    </ul>
 
-  <h2>2. 情報の利用目的</h2>
-  <p>収集した情報は、以下の目的で利用します。</p>
-  <ul>
-    <li>本アプリのサービス提供および機能の実現</li>
-    <li>ユーザーアカウントの管理および認証</li>
-    <li>AI相談機能における回答の最適化（登録作物・地域・季節のコンテキスト考慮）</li>
-    <li>地域に応じた栽培アドバイスの提供（都道府県の気候特性を考慮）</li>
-    <li>プッシュ通知の送信（予定のリマインド）</li>
-    <li>クラッシュ・エラーの監視および不具合の原因特定（Sentry）</li>
-    <li>アプリの利用状況の分析および機能改善（Firebase Analytics）</li>
-    <li>サブスクリプションの管理</li>
-    <li>共有メンバーへの表示名・アバターの表示（今後提供予定）</li>
-    <li>公開作物の他ユーザーへの表示（今後提供予定）</li>
-    <li>いいね情報の集計・表示（今後提供予定）</li>
-    <li>サービスの改善および新機能の開発</li>
-    <li>お問い合わせへの対応</li>
-  </ul>
+    <h3>1.2 自動的に収集する情報</h3>
+    <ul>
+      <li><strong>位置情報:</strong> 地域設定機能でGPS自動取得を選択した場合のみ、端末の位置情報を一時的に取得します。取得した位置情報は都道府県名への変換にのみ使用し、緯度・経度などの詳細な位置情報はサーバーに保存しません</li>
+      <li><strong>デバイス情報:</strong> OS種類・バージョン、デバイスモデル</li>
+      <li><strong>利用状況（Firebase Analytics）:</strong> 画面遷移、操作イベント（作物登録、日記投稿、AI相談開始等）、アプリ利用頻度、Firebase App Instance ID、ユーザーID</li>
+      <li><strong>クラッシュ・エラー情報（Sentry）:</strong> アプリの異常終了・エラーの発生箇所と詳細、画面遷移履歴、デバイス情報、ユーザーID</li>
+      <li><strong>パフォーマンスデータ（Sentry）:</strong> 画面遷移の所要時間、APIリクエストの所要時間等のパフォーマンス計測値</li>
+      <li><strong>課金情報:</strong> サブスクリプションの状態（決済情報自体はApple/Googleが管理）</li>
+    </ul>
+    <p class="note">Firebase Analytics・Sentry で送信されるデータには、メールアドレスや氏名、AI相談のメッセージ本文等の個人情報が含まれないよう、アプリ側でフィルタリングを行っています。これらのデータ送信は、設定画面からいつでも停止できます（詳細は第7項）。</p>
 
-  <h2>3. 利用する外部サービス</h2>
-  <p>本アプリでは、サービス提供のために以下の外部サービスを業務委託先として利用しています。これらの委託先では、本アプリの管理下で個人データが取り扱われます。各サービスのプライバシーポリシーもあわせてご確認ください。</p>
-  <p style="font-size: 0.9rem; color: #555;">※ 以下のサービスは米国等の海外のサーバーで運用されている場合があります。ユーザーデータが国外に保管・処理される可能性について、本ポリシーへの同意をもって包括的にご承諾いただくものとします。各国のデータ保護制度については、各サービスのプライバシーポリシー等をご確認ください。</p>
+    <h2>2. 情報の利用目的</h2>
+    <p>収集した情報は、以下の目的で利用します。</p>
+    <ul>
+      <li>本アプリのサービス提供および機能の実現</li>
+      <li>ユーザーアカウントの管理および認証</li>
+      <li>AI相談機能における回答の最適化（登録作物・地域・季節のコンテキスト考慮）</li>
+      <li>地域に応じた栽培アドバイスの提供（都道府県の気候特性を考慮）</li>
+      <li>プッシュ通知の送信（予定のリマインド）</li>
+      <li>クラッシュ・エラーの監視および不具合の原因特定（Sentry）</li>
+      <li>アプリの利用状況の分析および機能改善（Firebase Analytics）</li>
+      <li>サブスクリプションの管理</li>
+      <li>共有メンバーへの表示名・アバターの表示（今後提供予定）</li>
+      <li>公開作物の他ユーザーへの表示（今後提供予定）</li>
+      <li>いいね情報の集計・表示（今後提供予定）</li>
+      <li>サービスの改善および新機能の開発</li>
+      <li>お問い合わせへの対応</li>
+    </ul>
 
-  <table>
-    <tr>
-      <th>サービス</th>
-      <th>提供元</th>
-      <th>利用目的</th>
-      <th>共有データ</th>
-    </tr>
-    <tr>
-      <td>Supabase</td>
-      <td>Supabase Inc.</td>
-      <td>認証・データベース・ストレージ</td>
-      <td>アカウント情報、作物・日記データ、写真</td>
-    </tr>
-    <tr>
-      <td>Google Gemini</td>
-      <td>Google LLC</td>
-      <td>AI相談機能</td>
-      <td>相談内容（テキスト）、回答の最適化のためのコンテキスト情報（登録作物リスト、地域情報、季節情報）</td>
-    </tr>
-    <tr>
-      <td>Firebase Cloud Messaging</td>
-      <td>Google LLC</td>
-      <td>プッシュ通知</td>
-      <td>デバイストークン</td>
-    </tr>
-    <tr>
-      <td>Firebase Analytics</td>
-      <td>Google LLC</td>
-      <td>利用状況の分析・機能改善</td>
-      <td>画面遷移、操作イベント、Firebase App Instance ID、ユーザーID</td>
-    </tr>
-    <tr>
-      <td>Sentry</td>
-      <td>Functional Software, Inc.</td>
-      <td>クラッシュ・エラー監視</td>
-      <td>クラッシュ情報、エラー内容、画面遷移履歴、デバイス情報、ユーザーID</td>
-    </tr>
-    <tr>
-      <td>RevenueCat</td>
-      <td>RevenueCat Inc.</td>
-      <td>サブスクリプション管理</td>
-      <td>匿名ID、購入情報</td>
-    </tr>
-    <tr>
-      <td>Geocoding API（OS標準）</td>
-      <td>Apple Inc. / Google LLC</td>
-      <td>位置情報から都道府県名への変換</td>
-      <td>端末の位置情報（一時的な利用のみ）</td>
-    </tr>
-    <tr>
-      <td>Apple Sign In</td>
-      <td>Apple Inc.</td>
-      <td>認証</td>
-      <td>Apple ID情報（ユーザーの選択に基づく）</td>
-    </tr>
-    <tr>
-      <td>Google Sign In</td>
-      <td>Google LLC</td>
-      <td>認証</td>
-      <td>Googleアカウント情報</td>
-    </tr>
-  </table>
+    <h2>3. 利用する外部サービス</h2>
+    <p>本アプリでは、サービス提供のために以下の外部サービスを業務委託先として利用しています。これらの委託先では、本アプリの管理下で個人データが取り扱われます。各サービスのプライバシーポリシーもあわせてご確認ください。</p>
+    <p class="note">以下のサービスは米国等の海外のサーバーで運用されている場合があります。ユーザーデータが国外に保管・処理される可能性について、本ポリシーへの同意をもって包括的にご承諾いただくものとします。各国のデータ保護制度については、各サービスのプライバシーポリシー等をご確認ください。</p>
 
-  <p>上記の業務委託先以外の第三者に対し、法令に基づく場合を除き、ユーザーの同意なく個人データを提供することはありません。</p>
+    <table>
+      <tr>
+        <th>サービス</th>
+        <th>提供元</th>
+        <th>利用目的</th>
+        <th>共有データ</th>
+      </tr>
+      <tr>
+        <td>Supabase</td>
+        <td>Supabase Inc.</td>
+        <td>認証・データベース・ストレージ</td>
+        <td>アカウント情報、作物・日記データ、写真</td>
+      </tr>
+      <tr>
+        <td>Google Gemini</td>
+        <td>Google LLC</td>
+        <td>AI相談機能</td>
+        <td>相談内容（テキスト）、回答の最適化のためのコンテキスト情報（登録作物リスト、地域情報、季節情報）</td>
+      </tr>
+      <tr>
+        <td>Firebase Cloud Messaging</td>
+        <td>Google LLC</td>
+        <td>プッシュ通知</td>
+        <td>デバイストークン</td>
+      </tr>
+      <tr>
+        <td>Firebase Analytics</td>
+        <td>Google LLC</td>
+        <td>利用状況の分析・機能改善</td>
+        <td>画面遷移、操作イベント、Firebase App Instance ID、ユーザーID</td>
+      </tr>
+      <tr>
+        <td>Sentry</td>
+        <td>Functional Software, Inc.</td>
+        <td>クラッシュ・エラー監視</td>
+        <td>クラッシュ情報、エラー内容、画面遷移履歴、デバイス情報、ユーザーID</td>
+      </tr>
+      <tr>
+        <td>RevenueCat</td>
+        <td>RevenueCat Inc.</td>
+        <td>サブスクリプション管理</td>
+        <td>匿名ID、購入情報</td>
+      </tr>
+      <tr>
+        <td>Geocoding API（OS標準）</td>
+        <td>Apple Inc. / Google LLC</td>
+        <td>位置情報から都道府県名への変換</td>
+        <td>端末の位置情報（一時的な利用のみ）</td>
+      </tr>
+      <tr>
+        <td>Apple Sign In</td>
+        <td>Apple Inc.</td>
+        <td>認証</td>
+        <td>Apple ID情報（ユーザーの選択に基づく）</td>
+      </tr>
+      <tr>
+        <td>Google Sign In</td>
+        <td>Google LLC</td>
+        <td>認証</td>
+        <td>Googleアカウント情報</td>
+      </tr>
+    </table>
 
-  <h3 style="font-size: 1rem; margin-top: 16px; margin-bottom: 8px;">ユーザー間で共有される情報（今後提供予定）</h3>
-  <p>本アプリで今後提供を予定しているソーシャル機能の利用により、以下の情報が他のユーザーに表示される見込みです。機能提供開始時に、アプリ内で改めてご案内します。</p>
-  <ul>
-    <li><strong>共有機能:</strong> 表示名、アバター、日記内容（写真・テキスト）が共有メンバーに表示されます。</li>
-    <li><strong>公開機能:</strong> 表示名、アバター、公開設定された作物情報・日記が全ユーザーに表示されます。</li>
-    <li><strong>いいね:</strong> いいねの件数が表示されます。いいねしたユーザーの情報は非公開です。</li>
-  </ul>
+    <p>上記の業務委託先以外の第三者に対し、法令に基づく場合を除き、ユーザーの同意なく個人データを提供することはありません。</p>
 
-  <h2>4. データの保存</h2>
-  <ul>
-    <li>ユーザーデータは Supabase のサーバー上に安全に保存されます。</li>
-    <li>写真データは Supabase Storage に暗号化して保存されます。</li>
-    <li>お試しプラン（匿名）ご利用時のデータも同様に保存されますが、アカウント登録を行わない場合、端末の変更時にデータにアクセスできなくなる可能性があります。</li>
-  </ul>
+    <h3>ユーザー間で共有される情報（今後提供予定）</h3>
+    <p>本アプリで今後提供を予定しているソーシャル機能の利用により、以下の情報が他のユーザーに表示される見込みです。機能提供開始時に、アプリ内で改めてご案内します。</p>
+    <ul>
+      <li><strong>共有機能:</strong> 表示名、アバター、日記内容（写真・テキスト）が共有メンバーに表示されます。</li>
+      <li><strong>公開機能:</strong> 表示名、アバター、公開設定された作物情報・日記が全ユーザーに表示されます。</li>
+      <li><strong>いいね:</strong> いいねの件数が表示されます。いいねしたユーザーの情報は非公開です。</li>
+    </ul>
 
-  <h2>5. データの保持期間</h2>
-  <ul>
-    <li>ユーザーがアカウントを削除するまで、データは保持されます。</li>
-    <li>お試しプラン（匿名）・無料プランでは過去1年分のデータが閲覧可能ですが、1年を超えるデータも削除されずに保持されます。プレミアムプランにアップグレードすると、過去のすべてのデータを閲覧できます。</li>
-    <li>アカウントおよび関連データの削除は、以下のいずれかの方法でお手続きいただけます。
-      <ul style="margin-top: 4px;">
-        <li>ウェブ上の削除手続きページ: <a href="https://ruruq.pine-app.studio/delete-account" target="_blank" rel="noopener">https://ruruq.pine-app.studio/delete-account</a></li>
-        <li>サポートメール: <a href="mailto:support.ruruq@pine-app.studio">support.ruruq@pine-app.studio</a> までご連絡ください。</li>
-      </ul>
-    </li>
-  </ul>
+    <h2>4. データの保存</h2>
+    <ul>
+      <li>ユーザーデータは Supabase のサーバー上に安全に保存されます。</li>
+      <li>写真データは Supabase Storage に暗号化して保存されます。</li>
+      <li>お試しプラン（匿名）ご利用時のデータも同様に保存されますが、アカウント登録を行わない場合、端末の変更時にデータにアクセスできなくなる可能性があります。</li>
+    </ul>
 
-  <h2>6. データの安全管理</h2>
-  <p>本アプリでは、ユーザーデータの安全性を確保するために以下の措置を講じています。</p>
-  <ul>
-    <li>通信の暗号化（HTTPS/TLS）</li>
-    <li>Row Level Security（RLS）によるデータベースレベルのアクセス制御</li>
-    <li>認証トークンによるアクセス管理</li>
-    <li>共有・公開機能（今後提供予定）におけるロールベースアクセス制御（RBAC）による権限管理</li>
-  </ul>
+    <h2>5. データの保持期間</h2>
+    <ul>
+      <li>ユーザーがアカウントを削除するまで、データは保持されます。</li>
+      <li>お試しプラン（匿名）・無料プランでは過去1年分のデータが閲覧可能ですが、1年を超えるデータも削除されずに保持されます。プレミアムプランにアップグレードすると、過去のすべてのデータを閲覧できます。</li>
+      <li>アカウントおよび関連データの削除は、以下のいずれかの方法でお手続きいただけます。
+        <ul>
+          <li>ウェブ上の削除手続きページ: <a href="https://ruruq.pine-app.studio/delete-account" target="_blank" rel="noopener">https://ruruq.pine-app.studio/delete-account</a></li>
+          <li>サポートメール: <a href="mailto:support.ruruq@pine-app.studio">support.ruruq@pine-app.studio</a> までご連絡ください。</li>
+        </ul>
+      </li>
+    </ul>
 
-  <h2>7. ユーザーの権利とデータ送信の停止</h2>
-  <p>ユーザーは以下の権利を有します。</p>
-  <ul>
-    <li><strong>アクセス権:</strong> 自身の個人情報へのアクセスを要求する権利</li>
-    <li><strong>訂正権:</strong> 不正確な個人情報の訂正を要求する権利</li>
-    <li><strong>削除権:</strong> 個人情報の削除を要求する権利。アカウントの削除は <a href="https://ruruq.pine-app.studio/delete-account" target="_blank" rel="noopener">削除手続きページ</a> からセルフサービスでお手続きいただけます。</li>
-    <li><strong>データポータビリティ:</strong> 自身のデータを取得する権利</li>
-  </ul>
-  <p>これらの権利の行使を希望する場合は、お問い合わせ先までご連絡ください。</p>
+    <h2>6. データの安全管理</h2>
+    <p>本アプリでは、ユーザーデータの安全性を確保するために以下の措置を講じています。</p>
+    <ul>
+      <li>通信の暗号化（HTTPS/TLS）</li>
+      <li>Row Level Security（RLS）によるデータベースレベルのアクセス制御</li>
+      <li>認証トークンによるアクセス管理</li>
+      <li>共有・公開機能（今後提供予定）におけるロールベースアクセス制御（RBAC）による権限管理</li>
+    </ul>
 
-  <h3 style="font-size: 1rem; margin-top: 16px; margin-bottom: 8px;">利用状況データの送信停止（オプトアウト）</h3>
-  <p>Sentry および Firebase Analytics へのデータ送信は、アプリの設定画面にある「利用状況データの送信」トグルからいつでも停止できます。</p>
-  <ul>
-    <li>OFFにすると、Firebase Analyticsへのイベント送信は即座に停止され、Sentryへのエラー送信は次回のアプリ起動時から停止します。</li>
-    <li>OFFにしても、作物登録・日記・AI相談などのアプリ基本機能は通常どおりご利用いただけます。</li>
-    <li>各サービスのプライバシーポリシーについては、以下のリンクからご確認いただけます。
-      <ul style="margin-top: 4px;">
-        <li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry プライバシーポリシー</a></li>
-        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase プライバシーとセキュリティ</a></li>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
-      </ul>
-    </li>
-  </ul>
+    <h2>7. ユーザーの権利とデータ送信の停止</h2>
+    <p>ユーザーは以下の権利を有します。</p>
+    <ul>
+      <li><strong>アクセス権:</strong> 自身の個人情報へのアクセスを要求する権利</li>
+      <li><strong>訂正権:</strong> 不正確な個人情報の訂正を要求する権利</li>
+      <li><strong>削除権:</strong> 個人情報の削除を要求する権利。アカウントの削除は <a href="https://ruruq.pine-app.studio/delete-account" target="_blank" rel="noopener">削除手続きページ</a> からセルフサービスでお手続きいただけます。</li>
+      <li><strong>データポータビリティ:</strong> 自身のデータを取得する権利</li>
+    </ul>
+    <p>これらの権利の行使を希望する場合は、お問い合わせ先までご連絡ください。</p>
 
-  <h2>8. 子どものプライバシー</h2>
-  <p>本アプリは、13歳未満の子どもを対象としていません。13歳未満の子どもから意図的に個人情報を収集することはありません。</p>
+    <h3>利用状況データの送信停止（オプトアウト）</h3>
+    <p>Sentry および Firebase Analytics へのデータ送信は、アプリの設定画面にある「利用状況データの送信」トグルからいつでも停止できます。</p>
+    <ul>
+      <li>OFFにすると、Firebase Analyticsへのイベント送信は即座に停止され、Sentryへのエラー送信は次回のアプリ起動時から停止します。</li>
+      <li>OFFにしても、作物登録・日記・AI相談などのアプリ基本機能は通常どおりご利用いただけます。</li>
+      <li>各サービスのプライバシーポリシーについては、以下のリンクからご確認いただけます。
+        <ul>
+          <li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry プライバシーポリシー</a></li>
+          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase プライバシーとセキュリティ</a></li>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+        </ul>
+      </li>
+    </ul>
 
-  <h2>9. ポリシーの変更</h2>
-  <p>本プライバシーポリシーは、必要に応じて変更されることがあります。重要な変更がある場合は、アプリ内通知またはウェブサイトにてお知らせします。変更後も本アプリを継続して利用した場合、変更後のポリシーに同意したものとみなします。</p>
+    <h2>8. 子どものプライバシー</h2>
+    <p>本アプリは、13歳未満の子どもを対象としていません。13歳未満の子どもから意図的に個人情報を収集することはありません。</p>
 
-  <h2>10. お問い合わせ</h2>
-  <p>本プライバシーポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
-  <p>メール: <a href="mailto:support.ruruq@pine-app.studio">support.ruruq@pine-app.studio</a></p>
+    <h2>9. ポリシーの変更</h2>
+    <p>本プライバシーポリシーは、必要に応じて変更されることがあります。重要な変更がある場合は、アプリ内通知またはウェブサイトにてお知らせします。変更後も本アプリを継続して利用した場合、変更後のポリシーに同意したものとみなします。</p>
+
+    <h2>10. お問い合わせ</h2>
+    <p>本プライバシーポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+    <p>メール: <a href="mailto:support.ruruq@pine-app.studio">support.ruruq@pine-app.studio</a></p>
+
+    <footer class="doc-foot">
+      <span>るるん — Pine App Studio</span>
+      <a href="terms.html">利用規約</a>
+    </footer>
+  </main>
 </body>
 </html>
