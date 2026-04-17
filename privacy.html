@@ -63,7 +63,7 @@
 </head>
 <body>
   <h1>プライバシーポリシー</h1>
-  <p class="meta">最終更新日: 2026年4月2日</p>
+  <p class="meta">最終更新日: 2026年4月17日</p>
 
   <p>本プライバシーポリシーは、<span class="app-name">るるん</span>（以下「本アプリ」）におけるユーザーの個人情報の取り扱いについて定めるものです。</p>
 
@@ -76,7 +76,7 @@
     <li><strong>作物情報:</strong> 登録した作物の種類、品種、栽培状態</li>
     <li><strong>日記情報:</strong> テキスト、写真、天気情報</li>
     <li><strong>AI相談内容:</strong> チャットでの質問・回答履歴</li>
-    <li><strong>リマインダー設定:</strong> 水やり頻度、通知時間帯</li>
+    <li><strong>予定（タスク）情報:</strong> 予定のタイトル、予定日、通知時刻、繰り返し設定、対象作物、作業内容（水やり・追肥等）、メモ</li>
     <li><strong>地域情報:</strong> お住まいの都道府県（地域設定時に手動選択またはGPS位置情報から自動取得）</li>
     <li><strong>プロフィール情報:</strong> 表示名、アバター設定</li>
   </ul>
@@ -85,9 +85,12 @@
   <ul>
     <li><strong>位置情報:</strong> 地域設定機能でGPS自動取得を選択した場合のみ、端末の位置情報を一時的に取得します。取得した位置情報は都道府県名への変換にのみ使用し、緯度・経度などの詳細な位置情報はサーバーに保存しません</li>
     <li><strong>デバイス情報:</strong> OS種類・バージョン、デバイスモデル</li>
-    <li><strong>利用状況:</strong> アプリの利用頻度、機能の使用状況</li>
+    <li><strong>利用状況（Firebase Analytics）:</strong> 画面遷移、操作イベント（作物登録、日記投稿、AI相談開始等）、アプリ利用頻度、Firebase App Instance ID、ユーザーID</li>
+    <li><strong>クラッシュ・エラー情報（Sentry）:</strong> アプリの異常終了・エラーの発生箇所と詳細、画面遷移履歴、デバイス情報、ユーザーID</li>
+    <li><strong>パフォーマンスデータ（Sentry）:</strong> 画面遷移の所要時間、APIリクエストの所要時間等のパフォーマンス計測値</li>
     <li><strong>課金情報:</strong> サブスクリプションの状態（決済情報自体はApple/Googleが管理）</li>
   </ul>
+  <p style="font-size: 0.9rem; color: #555;">※ Firebase Analytics・Sentry で送信されるデータには、メールアドレスや氏名、AI相談のメッセージ本文等の個人情報が含まれないよう、アプリ側でフィルタリングを行っています。これらのデータ送信は、設定画面からいつでも停止できます（詳細は第7項）。</p>
 
   <h2>2. 情報の利用目的</h2>
   <p>収集した情報は、以下の目的で利用します。</p>
@@ -96,7 +99,9 @@
     <li>ユーザーアカウントの管理および認証</li>
     <li>AI相談機能における回答の最適化（登録作物・地域・季節のコンテキスト考慮）</li>
     <li>地域に応じた栽培アドバイスの提供（都道府県の気候特性を考慮）</li>
-    <li>プッシュ通知の送信（リマインダー）</li>
+    <li>プッシュ通知の送信（予定のリマインド）</li>
+    <li>クラッシュ・エラーの監視および不具合の原因特定（Sentry）</li>
+    <li>アプリの利用状況の分析および機能改善（Firebase Analytics）</li>
     <li>サブスクリプションの管理</li>
     <li>共有メンバーへの表示名・アバターの表示</li>
     <li>公開作物の他ユーザーへの表示</li>
@@ -132,6 +137,18 @@
       <td>Google LLC</td>
       <td>プッシュ通知</td>
       <td>デバイストークン</td>
+    </tr>
+    <tr>
+      <td>Firebase Analytics</td>
+      <td>Google LLC</td>
+      <td>利用状況の分析・機能改善</td>
+      <td>画面遷移、操作イベント、Firebase App Instance ID、ユーザーID</td>
+    </tr>
+    <tr>
+      <td>Sentry</td>
+      <td>Functional Software, Inc.</td>
+      <td>クラッシュ・エラー監視</td>
+      <td>クラッシュ情報、エラー内容、画面遷移履歴、デバイス情報、ユーザーID</td>
     </tr>
     <tr>
       <td>RevenueCat</td>
@@ -192,7 +209,7 @@
     <li>共有・公開機能におけるロールベースアクセス制御（RBAC）による権限管理</li>
   </ul>
 
-  <h2>7. ユーザーの権利</h2>
+  <h2>7. ユーザーの権利とデータ送信の停止</h2>
   <p>ユーザーは以下の権利を有します。</p>
   <ul>
     <li><strong>アクセス権:</strong> 自身の個人情報へのアクセスを要求する権利</li>
@@ -201,6 +218,20 @@
     <li><strong>データポータビリティ:</strong> 自身のデータを取得する権利</li>
   </ul>
   <p>これらの権利の行使を希望する場合は、お問い合わせ先までご連絡ください。</p>
+
+  <h3 style="font-size: 1rem; margin-top: 16px; margin-bottom: 8px;">利用状況データの送信停止（オプトアウト）</h3>
+  <p>Sentry および Firebase Analytics へのデータ送信は、アプリの設定画面にある「利用状況データの送信」トグルからいつでも停止できます。</p>
+  <ul>
+    <li>OFFにすると、Firebase Analyticsへのイベント送信は即座に停止され、Sentryへのエラー送信は次回のアプリ起動時から停止します。</li>
+    <li>OFFにしても、作物登録・日記・AI相談などのアプリ基本機能は通常どおりご利用いただけます。</li>
+    <li>各サービスのプライバシーポリシーについては、以下のリンクからご確認いただけます。
+      <ul style="margin-top: 4px;">
+        <li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry プライバシーポリシー</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase プライバシーとセキュリティ</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+      </ul>
+    </li>
+  </ul>
 
   <h2>8. 子どものプライバシー</h2>
   <p>本アプリは、13歳未満の子どもを対象としていません。13歳未満の子どもから意図的に個人情報を収集することはありません。</p>
